@@ -1,0 +1,77 @@
+body {
+    background-color: #36323b;
+    color: #ffffff;
+    font-family: 'Century Gothic', Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .app-name {
+    font-family: 'Century Gothic', Arial;
+    font-size: 2.5em;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin: 20px 0 10px 0;
+  }
+  
+  .registro-box {
+    background-color: #a27a94;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .registro-button {
+    background-color: #36323b;
+    color: #ffffff !important;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+  }
+  
+  .registro-button:hover {
+    background-color: #271835;
+    font-family: 'Century Gothic', sans-serif;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #456da1;
+    text-decoration: none;
+  }
+  
