@@ -28,6 +28,108 @@
 
     </div>
   </div>
+
+  <div class="container">
+    <div class="app-name-menu">YOGAFIT</div>
+    <p>Bienvenido, [Nombre de Usuario]</p>
+
+    <div class="menu-buttons">
+      <div class="menu-row">
+        <div class="menu-button">
+          <a href="perfil.html"></a>
+          <!-- Contenido del primer botón -->
+          <h3>Perfil</h3>
+          <img src="Imagenes/perfil.png" alt="Icono Perfil">
+        </div>
+        <div class="menu-button">
+          <!-- Contenido del segundo botón -->
+          <h3>Configuración</h3>
+          <img src="Imagenes/configuracion.png" alt="Icono Configuración">
+        </div>
+        <div class="menu-button">
+          <!-- Contenido del tercer botón -->
+            <h3>Mis Estadísticas</h3>
+            <img src="Imagenes/estadisticas.png" alt="Icono Estadísticas">
+        </div>
+      </div>
+
+      <div class="menu-row">
+        <div class="menu-button">
+          <!-- Contenido del cuarto botón -->
+          <h3><h3>Mis Posturas</h3>
+          <img src="Imagenes/mis posturas.png" alt="Icono Posturas">
+        </div>
+        <div class="menu-button">
+          <!-- Contenido del quinto botón -->
+          <h3>Mi Plan</h3>
+          <img src="Imagenes/mi plan.png" alt="Icono Plan">
+        </div>
+        <div class="menu-button">
+          <!-- Contenido del sexto botón -->
+          <h3>Mi Música</h3>
+          <img src="Imagenes/musica.png" alt="Icono Música">
+        </div>
+      </div>
+    </div>
+
+    <button class="entrenar-button">Entrenar</button>
+  </div>
+
+  <div class="container">
+    <div class="navigation">
+      <a href="menu.html" class="back-button">
+        <img src="Imagenes/volver.png" alt="Volver">
+        <span>Volver</span>
+      </a>
+      <h1 class="page-title">Mi Perfil</h1>
+    </div>
+    <img src="Imagenes/perfil.png" alt="Imagen de perfil" class="profile-image">
+    <p class="user-name">Nombre del Usuario</p>
+
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <label for="nivel-experiencia">Nivel de Experiencia:</label>
+        <select id="nivel-experiencia" name="nivel-experiencia">
+          <option value="principiante">Principiante</option>
+          <option value="moderado">Moderado</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="objetivo">Objetivo:</label>
+        <select id="objetivo" name="objetivo">
+          <option value="objetivo-1">Objetivo 1</option>
+          <option value="objetivo-2">Objetivo 2</option>
+          <option value="objetivo-3">Objetivo 3</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="preferencias-practica">Preferencias de Practica:</label>
+        <select id="preferencias-practica" name="preferencias-practica">
+          <option value="practica-1">Práctica 1</option>
+          <option value="practica-2">Práctica 2</option>
+          <option value="practica-3">Práctica 3</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="tiempo-estimado">Tiempo Estimado:</label>
+        <select id="tiempo-estimado" name="tiempo-estimado">
+          <option value="20-min">20 min</option>
+          <option value="40-min">40 min</option>
+          <option value="60-min">60 min</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="entrenar-button" onclick="window.location.href='practica.html'">Entrenar Ahora</button>
+
+    <img src="Imagenes/pngwing.com.png" alt="Logo de YOGAFIT" class="app-logo">
+  </div>
+
+
   <script src="app.js"></script>
 </body>
 
