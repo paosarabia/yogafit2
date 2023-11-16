@@ -1,0 +1,102 @@
+body {
+    background-color: #36323b;
+    color: #ffffff;
+    font-family: 'Century Gothic', Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.container {
+    text-align: center;
+}
+  
+.app-name-menu {
+    font-family: 'Century Gothic', Arial;
+    font-size: 2em;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+  
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+  
+.menu-button {
+    background-color: #a27a94;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.menu-button img {
+    max-height: 100px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+  
+.menu-button h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+  
+.entrenar-button {
+    background-color: #a27a94;
+    color: #ffffff;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+.entrenar-button:hover {
+    background-color: #a27a94;
+}
+  
+  /* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .menu-buttons {
+      padding: 0 20px; /* Agregar espaciado a los lados */
+    }
+  
+    .menu-row {
+      flex-direction: column; /* Cambiar a una disposición de columna */
+      align-items: center; /* Centrar los elementos */
+    }
+  
+    .menu-button {
+      width: 80%; /* Ajustar el ancho de los botones */
+      max-width: 200px; /* Ancho máximo de los botones */
+      margin: 10px 0; /* Espaciado entre botones */
+    }
+  }
+  
+.perfil-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  

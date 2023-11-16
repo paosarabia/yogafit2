@@ -43,8 +43,8 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #a27a94;
-    color: #ffffff;
+    background-color: #ffff;
+    color: black;
   }
 
   .configuracion-submit {
@@ -59,4 +59,31 @@ body {
 
   .configuracion-submit:hover {
     background-color: #865e7d;
+  }
+
+  .back-container {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 60px;
+    /* Ajusta el valor según sea necesario */
+  }
+  
+  .back-button {
+    background-color: #36323b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back-button img {
+    width: 50px;
+    /* ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+  
+  .back-label {
+    font-size: 1em;
+    margin-left: 10px;
+    font-family: 'Century Gothic', Arial;
   }
