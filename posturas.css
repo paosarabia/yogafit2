@@ -76,6 +76,21 @@ body {
 .entrenar-button:hover {
     background-color: #a27a94;
 }
+
+.perfil-button {
+  background-color: #a27a94;
+  color: #ffffff;
+  font-family: 'Century Gothic', sans-serif;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.perfil-button:hover {
+  background-color: #a27a94;
+}
   
   /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -94,9 +109,24 @@ body {
       margin: 10px 0; /* Espaciado entre botones */
     }
   }
-  
-.perfil-link {
+
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #ffffff;
+  }
+  
+  .back-button img {
+    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilos adicionales para el botón si lo necesitas */
+  .back-button:hover {
+    opacity: 0.7; /* Cambia la opacidad al pasar el cursor sobre el botón */
   }
   

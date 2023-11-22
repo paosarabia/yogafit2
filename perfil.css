@@ -13,33 +13,27 @@ body {
   .container {
     text-align: center;
   }
-  
-  .back-container {
+
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
     display: flex;
     align-items: center;
-    align-self: flex-start;
-    margin-top: 60px;
-    /* Ajusta el valor según sea necesario */
-  }
-  
-  .back-button {
-    background-color: #36323b;
+    text-decoration: none;
     color: #ffffff;
-    border: none;
-    cursor: pointer;
   }
   
   .back-button img {
-    width: 50px;
-    /* ajusta el tamaño según sea necesario */
-    height: auto;
+    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
   }
   
-  .back-label {
-    font-size: 1em;
-    margin-left: 10px;
-    font-family: 'Century Gothic', Arial;
+  /* Estilos adicionales para el botón si lo necesitas */
+  .back-button:hover {
+    opacity: 0.7; /* Cambia la opacidad al pasar el cursor sobre el botón */
   }
+  
   
   .page-title {
     font-size: 1em;
