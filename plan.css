@@ -1,0 +1,69 @@
+body {
+    background-color: #36323b;
+    color: #ffffff;
+    font-family: 'Century Gothic', Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.app-name-menu {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+  
+.calendar-container {
+    margin-top: 20px;
+}
+  
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* Estilos para el cronómetro */
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .timer-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .timer-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .timer button {
+    background-color: #a27a94;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .timer button:hover {
+    background-color: #7a567a;
+  }
+  
+
+  

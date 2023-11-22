@@ -37,6 +37,48 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 100); // Puedes ajustar el retraso según sea necesario
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const timerDisplay = document.getElementById('time');
+    const startButton = document.getElementById('start');
+    const pauseButton = document.getElementById('pause');
+    const breatheButton = document.getElementById('breathe');
+    const cancelButton = document.getElementById('cancel');
+  
+    let timer; // Variable para guardar el setInterval del cronómetro
+    let seconds = 0;
+  
+    function startTimer() {
+      timer = setInterval(function() {
+        seconds++;
+        timerDisplay.textContent = formatTime(seconds);
+      }, 1000);
+    }
+  
+    function pauseTimer() {
+      clearInterval(timer);
+    }
+  
+    function resetTimer() {
+      clearInterval(timer);
+      seconds = 0;
+      timerDisplay.textContent = formatTime(seconds);
+    }
+  
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
+      return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    }
+  
+    startButton.addEventListener('click', startTimer);
+    pauseButton.addEventListener('click', pauseTimer);
+    breatheButton.addEventListener('click', startTimer); // Simplemente reinicia el cronómetro al hacer clic en "Respira"
+    cancelButton.addEventListener('click', resetTimer);
+  });
+  
+
+
   
   
 
