@@ -84,3 +84,18 @@ body {
     height: auto;
     margin-top: 10px;
   }
+
+.entrenar-button {
+  background-color: #a27a94;
+  color: #ffffff;
+  font-family: 'Century Gothic', sans-serif;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+.entrenar-button:hover {
+  background-color: #a27a94;
+}
