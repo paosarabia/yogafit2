@@ -165,8 +165,9 @@ body {
   }
 
   .menu-button {
-    width: 80%; /* Ajustar el ancho de los botones */
-    max-width: 200px; /* Ancho máximo de los botones */
+    width: calc(100% - 40px); /* Ancho ajustado con margen */
+    max-width: 300px; /* Ancho máximo de los botones */
     margin: 10px 0; /* Espaciado entre botones */
+    height: auto; /* Ajuste de altura automática */
   }
 }
