@@ -19,17 +19,62 @@ body {
     margin-top: 20px;
 }
   
-.carousel {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  /*overflow: hidden; /* Añadido para ocultar el desbordamiento */
+  margin-top: 20px;
 }
-  
-.carousel img {
-    max-width: 100%;
-    height: auto;
+
+.carousel-item {
+  display: none;  /* Todas las imágenes ocultas por defecto */
 }
-  
+
+.carousel-item:first-child {
+  display: block;  /* La primera imagen visible por defecto */
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 400px; /* Altura máxima ajustada según sea necesario */
+  object-fit: cover; /* Para mantener la relación de aspecto */
+  border-radius: 8px;
+}
+
+.carousel-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(54, 50, 59, 0.7);
+  padding: 10px;
+  margin: 0;
+  font-size: 1em;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #ffffff;
+  background-color: #a27a94;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
 /* Estilos para el cronómetro */
 .timer {
     display: flex;
