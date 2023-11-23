@@ -1,83 +1,52 @@
 body {
-    background-color: #36323b;
-    color: #ffffff;
-    font-family: 'Century Gothic', Arial;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-  
-.container {
-    text-align: center;
-}
-  
-.app-name-menu {
-    font-family: 'Century Gothic', Arial;
-    font-size: 2em;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-  
-.menu-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
-}
-  
-.menu-row {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-  
-.menu-button {
-    background-color: #a27a94;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
-    text-align: center;
-    cursor: pointer;
-    width: 100px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-  
-.menu-button img {
-    max-height: 100px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-}
-  
-.menu-button h3 {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #ffffff;
-}
-  
-.entrenar-button {
-    background-color: #a27a94;
-    color: #ffffff;
-    font-family: 'Century Gothic', sans-serif;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-  
-.entrenar-button:hover {
-    background-color: #a27a94;
+  background-color: #36323b;
+  color: #ffffff;
+  font-family: 'Century Gothic', Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.perfil-button {
+.postura-container {
+  text-align: center;
+  margin: 10px;
+}
+
+.postura-item {
+  background-color: #a27a94;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.postura-item img {
+  max-height: 80px;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.postura-info {
+  display: none;
+  text-align: left;
+}
+
+.postura-container:hover .postura-info {
+  display: block;
+}
+
+.postura-info h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.postura-info p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.entrenar-button {
   background-color: #a27a94;
   color: #ffffff;
   font-family: 'Century Gothic', sans-serif;
@@ -88,45 +57,25 @@ body {
   margin-top: 20px;
 }
 
-.perfil-button:hover {
+.entrenar-button:hover {
   background-color: #a27a94;
 }
-  
-  /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .menu-buttons {
-      padding: 0 20px; /* Agregar espaciado a los lados */
-    }
-  
-    .menu-row {
-      flex-direction: column; /* Cambiar a una disposición de columna */
-      align-items: center; /* Centrar los elementos */
-    }
-  
-    .menu-button {
-      width: 80%; /* Ajustar el ancho de los botones */
-      max-width: 200px; /* Ancho máximo de los botones */
-      margin: 10px 0; /* Espaciado entre botones */
-    }
-  }
 
-  .back-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  .back-button img {
-    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
-  }
-  
-  /* Estilos adicionales para el botón si lo necesitas */
-  .back-button:hover {
-    opacity: 0.7; /* Cambia la opacidad al pasar el cursor sobre el botón */
-  }
-  
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.back-button img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.back-button:hover {
+  opacity: 0.7;
+}

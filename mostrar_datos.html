@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mostrar_datos.css">
+    <title>Datos Mostrados</title>
+</head>
+<body>
+    <h1>Mi Historial</h1>
+
+    <div id="datosMostrados"></div>
+
+    <a href="menu.html" class="back-button">
+        <img src="Imagenes/volver.png" alt="Volver">
+        <span>Volver</span></a>
+
+    <script>
+        // Función para obtener los parámetros de la URL
+        function obtenerParametro(nombreParametro) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombreParametro);
+        }
+
+        // Obtener datos de la URL
+        var ritmo_cardiaco = obtenerParametro('ritmo_cardiaco');
+        var nivel_oxigeno = obtenerParametro('nivel_oxigeno');
+        var nivel_estres = obtenerParametro('nivel_estres');
+
+        // Mostrar los datos en el elemento con id 'datosMostrados'
+        document.getElementById('datosMostrados').innerHTML =
+            "Ritmo Cardiaco: " + ritmo_cardiaco + "<br>Nivel de Oxígeno en Sangre: " + nivel_oxigeno + "<br>Nivel de Estrés: " + nivel_estres;
+    </script>
+    <img src = "Imagenes/curva.png" alt="estadisticas" class="app-estadistica">
+    <img src="Imagenes/pngwing.com.png" alt="Logo de YOGAFIT" class="app-logo">
+</body>
+</html>

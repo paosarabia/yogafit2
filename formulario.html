@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario de Datos Biométricos</title>
+</head>
+<body>
+    <a href="menu.html" class="back-button">
+        <img src="Imagenes/volver.png" alt="Volver">
+        <span>Volver</span></a>
+
+    <h1>Ingrese Datos Biométricos que le indica su reloj despues de la sesión:</h1>
+
+    <form id="miFormulario">
+        <label for="ritmo_cardiaco">Ritmo Cardiaco:</label>
+        <input type="text" id="ritmo_cardiaco" name="ritmo_cardiaco" required><br>
+
+        <label for="nivel_oxigeno">Nivel de Oxígeno en Sangre:</label>
+        <input type="text" id="nivel_oxigeno" name="nivel_oxigeno" required><br>
+
+        <label for="nivel_estres">Nivel de Estrés:</label>
+        <input type="text" id="nivel_estres" name="nivel_estres" required><br>
+
+        <input type="button" value="Mostrar Datos" onclick="mostrarDatos()">
+    </form>
+
+    <script>
+        function mostrarDatos() {
+            // Obtener los valores del formulario
+            var ritmo_cardiaco = document.getElementById('ritmo_cardiaco').value;
+            var nivel_oxigeno = document.getElementById('nivel_oxigeno').value;
+            var nivel_estres = document.getElementById('nivel_estres').value;
+
+            // Codificar datos en la URL y redirigir a la página de muestra
+            window.location.href = 'mostrar_datos.html?ritmo_cardiaco=' + encodeURIComponent(ritmo_cardiaco) +
+                '&nivel_oxigeno=' + encodeURIComponent(nivel_oxigeno) +
+                '&nivel_estres=' + encodeURIComponent(nivel_estres);
+        }
+    </script>
+
+    <img src="Imagenes/pngwing.com.png" alt="Logo de YOGAFIT" class="app-logo">
+</body>
+</html>
+
+
