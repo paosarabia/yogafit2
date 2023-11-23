@@ -153,21 +153,35 @@ body {
   background-color: #a27a94;
 }
 
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* scrollbar  Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 5px;    
+}
+/* scrollbar  Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(178, 156, 196); 
+  border-radius: 5px;
+}
+
 /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .menu-buttons {
     padding: 0 20px; /* Agregar espaciado a los lados */
   }
 
   .menu-row {
-    flex-direction: column; /* Cambiar a una disposición de columna */
+    flex-direction:column; /* Cambiar a una disposición de columna */
     align-items: center; /* Centrar los elementos */
   }
 
   .menu-button {
-    width: calc(100% - 40px); /* Ancho ajustado con margen */
-    max-width: 300px; /* Ancho máximo de los botones */
+    width: 80%; /* Ajustar el ancho de los botones */
+    max-width: 200px; /* Ancho máximo de los botones */
     margin: 10px 0; /* Espaciado entre botones */
-    height: auto; /* Ajuste de altura automática */
   }
 }

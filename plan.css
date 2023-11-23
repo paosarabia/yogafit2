@@ -131,7 +131,7 @@ body {
   }
   
   /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-buttons {
     padding: 0 20px; /* Agregar espaciado a los lados */
   }

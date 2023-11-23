@@ -51,3 +51,20 @@ body {
     opacity: 0.7;
   }
   
+  /* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 500px) {
+  .menu-buttons {
+    padding: 0 20px; /* Agregar espaciado a los lados */
+  }
+
+  .menu-row {
+    flex-direction: column; /* Cambiar a una disposición de columna */
+    align-items: center; /* Centrar los elementos */
+  }
+
+  .menu-button {
+    width: 80%; /* Ajustar el ancho de los botones */
+    max-width: 200px; /* Ancho máximo de los botones */
+    margin: 10px 0; /* Espaciado entre botones */
+  }
+}
