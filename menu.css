@@ -7,10 +7,15 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+
 }
 
-.container1 {
+.container {
   text-align: center;
+  max-width: 100%; /* Ancho máximo para adaptarse a diferentes tamaños de pantalla */
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .app-name {
@@ -72,21 +77,6 @@ a {
 button a {
   color: inherit;
   text-decoration: none;
-}
-
-body {
-  background-color: #36323b;
-  color: #ffffff;
-  font-family: 'Century Gothic', Arial;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
-  text-align: center;
 }
 
 .app-name-menu {
@@ -153,25 +143,13 @@ body {
   background-color: #a27a94;
 }
 
-/* scrollbar width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-/* scrollbar  Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 3px grey; 
-  border-radius: 5px;    
-}
-/* scrollbar  Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(178, 156, 196); 
-  border-radius: 5px;
-}
-
 /* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 765px){
   .menu-buttons {
     padding: 0 20px; /* Agregar espaciado a los lados */
+    flex-direction: unset;
+    justify-content: space-around;
+    flex-wrap: column;
   }
 
   .menu-row {
@@ -183,5 +161,10 @@ body {
     width: 80%; /* Ajustar el ancho de los botones */
     max-width: 200px; /* Ancho máximo de los botones */
     margin: 10px 0; /* Espaciado entre botones */
-  }
+    margin-bottom: 0;
+    border-radius: 20px;
+    flex-direction: column;
+ }
+
 }
+
